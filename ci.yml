@@ -1,0 +1,7 @@
+test_c:
+  stage: test
+  script:
+    - echo "This job tests something. It will only run when all jobs in the"
+    - echo "build stage are complete."
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
