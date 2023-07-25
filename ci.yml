@@ -1,4 +1,4 @@
-test_c:
+test_pipe:
   stage: test
   script:
     - echo "This job tests something. It will only run when all jobs in the"
